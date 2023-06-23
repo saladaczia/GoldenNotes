@@ -9,23 +9,25 @@
 /* Begin PBXBuildFile section */
 		44A4BFC62A458D38008EA9AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4BFC52A458D38008EA9AD /* AppDelegate.swift */; };
 		44A4BFC82A458D38008EA9AD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4BFC72A458D38008EA9AD /* SceneDelegate.swift */; };
-		44A4BFCA2A458D38008EA9AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4BFC92A458D38008EA9AD /* ViewController.swift */; };
+		44A4BFCA2A458D38008EA9AD /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4BFC92A458D38008EA9AD /* ListController.swift */; };
 		44A4BFCD2A458D38008EA9AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44A4BFCB2A458D38008EA9AD /* Main.storyboard */; };
 		44A4BFD02A458D38008EA9AD /* GoldenNotes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 44A4BFCE2A458D38008EA9AD /* GoldenNotes.xcdatamodeld */; };
 		44A4BFD22A458D3A008EA9AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44A4BFD12A458D3A008EA9AD /* Assets.xcassets */; };
 		44A4BFD52A458D3A008EA9AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44A4BFD32A458D3A008EA9AD /* LaunchScreen.storyboard */; };
+		44A4BFE32A459025008EA9AD /* NoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4BFE22A459025008EA9AD /* NoteController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		44A4BFC22A458D38008EA9AD /* GoldenNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoldenNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44A4BFC52A458D38008EA9AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44A4BFC72A458D38008EA9AD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		44A4BFC92A458D38008EA9AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		44A4BFC92A458D38008EA9AD /* ListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListController.swift; sourceTree = "<group>"; };
 		44A4BFCC2A458D38008EA9AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		44A4BFCF2A458D38008EA9AD /* GoldenNotes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GoldenNotes.xcdatamodel; sourceTree = "<group>"; };
 		44A4BFD12A458D3A008EA9AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44A4BFD42A458D3A008EA9AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44A4BFD62A458D3A008EA9AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44A4BFE22A459025008EA9AD /* NoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +60,65 @@
 		44A4BFC42A458D38008EA9AD /* GoldenNotes */ = {
 			isa = PBXGroup;
 			children = (
-				44A4BFC52A458D38008EA9AD /* AppDelegate.swift */,
-				44A4BFC72A458D38008EA9AD /* SceneDelegate.swift */,
-				44A4BFC92A458D38008EA9AD /* ViewController.swift */,
-				44A4BFCB2A458D38008EA9AD /* Main.storyboard */,
-				44A4BFD12A458D3A008EA9AD /* Assets.xcassets */,
-				44A4BFD32A458D3A008EA9AD /* LaunchScreen.storyboard */,
-				44A4BFD62A458D3A008EA9AD /* Info.plist */,
-				44A4BFCE2A458D38008EA9AD /* GoldenNotes.xcdatamodeld */,
+				44A4BFDC2A458EA1008EA9AD /* Sources */,
+				44A4BFDD2A458EB3008EA9AD /* Resources */,
+				44A4BFE02A458FFD008EA9AD /* Model */,
+				44A4BFE12A459004008EA9AD /* View */,
+				44A4BFDF2A458FDA008EA9AD /* Controller */,
+				44A4BFDE2A458ECC008EA9AD /* Support Files */,
 			);
 			path = GoldenNotes;
+			sourceTree = "<group>";
+		};
+		44A4BFDC2A458EA1008EA9AD /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				44A4BFC52A458D38008EA9AD /* AppDelegate.swift */,
+				44A4BFC72A458D38008EA9AD /* SceneDelegate.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		44A4BFDD2A458EB3008EA9AD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				44A4BFD32A458D3A008EA9AD /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		44A4BFDE2A458ECC008EA9AD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				44A4BFD12A458D3A008EA9AD /* Assets.xcassets */,
+				44A4BFD62A458D3A008EA9AD /* Info.plist */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		44A4BFDF2A458FDA008EA9AD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				44A4BFC92A458D38008EA9AD /* ListController.swift */,
+				44A4BFE22A459025008EA9AD /* NoteController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		44A4BFE02A458FFD008EA9AD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				44A4BFCE2A458D38008EA9AD /* GoldenNotes.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		44A4BFE12A459004008EA9AD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				44A4BFCB2A458D38008EA9AD /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,10 +192,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44A4BFCA2A458D38008EA9AD /* ViewController.swift in Sources */,
+				44A4BFCA2A458D38008EA9AD /* ListController.swift in Sources */,
 				44A4BFC62A458D38008EA9AD /* AppDelegate.swift in Sources */,
 				44A4BFD02A458D38008EA9AD /* GoldenNotes.xcdatamodeld in Sources */,
 				44A4BFC82A458D38008EA9AD /* SceneDelegate.swift in Sources */,
+				44A4BFE32A459025008EA9AD /* NoteController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +345,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = W6V4RR3FKW;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = GoldenNotes/Info.plist;
+				INFOPLIST_FILE = "GoldenNotes/Support Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -321,7 +373,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = W6V4RR3FKW;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = GoldenNotes/Info.plist;
+				INFOPLIST_FILE = "GoldenNotes/Support Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
