@@ -46,8 +46,18 @@ extension ListController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "goToNote", sender: self)
+        performSegue(withIdentifier: "goToViewer", sender: self)
     }
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToViewer" {
+            let vieverVC = segue.destination as! ViewerController
+            if let indexPath = noteListTable.indexPathForSelectedRow {
+                vieverVC.titleView = "Done title"
+                vieverVC.descriptionView = "Done description"
+                print(indexPath.row)
+            }
+            
+        }
+    }
 }

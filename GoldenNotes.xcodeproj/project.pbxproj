@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		443C6E082A45C39F00DF060D /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443C6E062A45C39F00DF060D /* NoteCell.swift */; };
 		443C6E092A45C39F00DF060D /* NoteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 443C6E072A45C39F00DF060D /* NoteCell.xib */; };
+		447940122A462293008FE53E /* ViewerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447940112A462293008FE53E /* ViewerController.swift */; };
 		44A4BFC62A458D38008EA9AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4BFC52A458D38008EA9AD /* AppDelegate.swift */; };
 		44A4BFC82A458D38008EA9AD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4BFC72A458D38008EA9AD /* SceneDelegate.swift */; };
 		44A4BFCA2A458D38008EA9AD /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A4BFC92A458D38008EA9AD /* ListController.swift */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		443C6E062A45C39F00DF060D /* NoteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
 		443C6E072A45C39F00DF060D /* NoteCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoteCell.xib; sourceTree = "<group>"; };
+		447940112A462293008FE53E /* ViewerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewerController.swift; sourceTree = "<group>"; };
 		44A4BFC22A458D38008EA9AD /* GoldenNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoldenNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44A4BFC52A458D38008EA9AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44A4BFC72A458D38008EA9AD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 			children = (
 				44A4BFC92A458D38008EA9AD /* ListController.swift */,
 				44A4BFE22A459025008EA9AD /* NoteController.swift */,
+				447940112A462293008FE53E /* ViewerController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				44A4BFCA2A458D38008EA9AD /* ListController.swift in Sources */,
+				447940122A462293008FE53E /* ViewerController.swift in Sources */,
 				44A4BFC62A458D38008EA9AD /* AppDelegate.swift in Sources */,
 				44A4BFD02A458D38008EA9AD /* GoldenNotes.xcdatamodeld in Sources */,
 				443C6E082A45C39F00DF060D /* NoteCell.swift in Sources */,
