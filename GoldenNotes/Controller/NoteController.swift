@@ -9,15 +9,16 @@ import UIKit
 
 class NoteController: UIViewController, UITextViewDelegate {
 
-    
+    // Outlets
+    @IBOutlet weak var titleLabel: UITextField!
     @IBOutlet weak var noteTextView: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Create placeholder for UITextView
-        noteTextView.text = "Placeholder"
-        noteTextView.textColor = UIColor.lightGray
+        noteTextView.text = "Type description..."
+        noteTextView.textColor = UIColor.gray
         noteTextView.delegate = self
       
     }
@@ -29,7 +30,7 @@ class NoteController: UIViewController, UITextViewDelegate {
 // MARK: - TextView Placeholder
 extension NoteController {
     func textViewDidBeginEditing(_ textView: UITextView) {
-        if noteTextView.textColor == UIColor.lightGray {
+        if noteTextView.textColor == UIColor.gray {
             noteTextView.text = nil
             noteTextView.textColor = UIColor.label
         }
@@ -37,8 +38,8 @@ extension NoteController {
     
     func textViewDidEndEditing(_ textView: UITextView) {
         if noteTextView.text.isEmpty {
-            noteTextView.text = "Placeholder"
-            noteTextView.textColor = UIColor.lightGray
+            noteTextView.text = "Type description..."
+            noteTextView.textColor = UIColor.gray
         }
     }
 }
