@@ -15,17 +15,22 @@ class ListController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // register table data source
+        // register table data source and delegate
         noteListTable.dataSource = self
+        noteListTable.delegate = self
+        
         // register table cell nib
         noteListTable.register(UINib(nibName: "NoteCell", bundle: nil), forCellReuseIdentifier: "noteCell")
     }
-
-
+    // Create new note button action
+    @IBAction func newNotePressed(_ sender: Any) {
+        performSegue(withIdentifier: "goToNote", sender: self)
+    }
+    
 }
 
 // MARK: - TableView Extension
-extension ListController: UITableViewDataSource {
+extension ListController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
@@ -38,6 +43,10 @@ extension ListController: UITableViewDataSource {
         
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "goToNote", sender: self)
     }
     
     

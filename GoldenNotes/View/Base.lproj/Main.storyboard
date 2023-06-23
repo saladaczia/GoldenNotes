@@ -35,12 +35,13 @@
                         <barButtonItem key="leftBarButtonItem" systemItem="edit" id="1C2-7y-l2l"/>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="square.and.pencil" catalog="system" id="W9p-SZ-x6O">
                             <connections>
-                                <segue destination="sVC-qb-WXc" kind="show" id="Y6w-GT-w7X"/>
+                                <action selector="newNotePressed:" destination="BYZ-38-t0r" id="H2c-Gw-Q85"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="noteListTable" destination="jwc-ol-93l" id="puD-xP-8mc"/>
+                        <outlet property="noteListTable" destination="jwc-ol-93l" id="jXO-0F-tc4"/>
+                        <segue destination="sVC-qb-WXc" kind="show" identifier="goToNote" id="hUR-vJ-6VF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -88,6 +89,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="noteTextView" destination="1kP-8r-sIu" id="P9U-g3-b68"/>
+                        <outlet property="saveButton" destination="TwK-hl-l6T" id="VUj-7o-FR9"/>
                         <outlet property="titleLabel" destination="Aoa-Xa-F3F" id="EwJ-mf-KUz"/>
                     </connections>
                 </viewController>

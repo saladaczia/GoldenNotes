@@ -12,6 +12,7 @@ class NoteController: UIViewController, UITextViewDelegate {
     // Outlets
     @IBOutlet weak var titleLabel: UITextField!
     @IBOutlet weak var noteTextView: UITextView!
+    @IBOutlet weak var saveButton: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
