@@ -17,17 +17,18 @@ class NoteController: UIViewController, UITextViewDelegate {
     // Coredata context
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
    
-    // Function for reload table in previous view
-    func refreshTable() {
-        NotificationCenter.default.post(name: NSNotification.Name("ReloadTabeList"), object: nil)
-    }
-    
+    // ViewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
         // Create placeholder for UITextView
         noteTextView.text = "Type description..."
         noteTextView.textColor = UIColor.gray
         noteTextView.delegate = self
+    }
+    
+    // Function for reload table in previous view
+    func refreshTable() {
+        NotificationCenter.default.post(name: NSNotification.Name("ReloadTabeList"), object: nil)
     }
     
     // Save note to coredata function

@@ -10,8 +10,6 @@ import CoreData
 
 class ListController: UIViewController {
     
-
-   
     // Outlets
     @IBOutlet weak var noteListTable: UITableView!
     
@@ -44,6 +42,8 @@ class ListController: UIViewController {
         // Run load data
         loadNote()
     }
+    
+    
     
     // Create new note button action
     @IBAction func newNotePressed(_ sender: Any) {
@@ -93,7 +93,6 @@ extension ListController: UITableViewDataSource, UITableViewDelegate {
 }
 
 // MARK: - extension segue prepare
-
 extension ListController {
     // prepare segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -110,7 +109,6 @@ extension ListController {
 }
 
 // MARK: - CoreData Functions
-
 extension ListController {
     
     // Load CoreData and put to array function
