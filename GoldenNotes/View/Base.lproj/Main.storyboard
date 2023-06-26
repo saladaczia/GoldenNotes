@@ -32,7 +32,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Note List" id="ct9-D7-sUL">
-                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="1C2-7y-l2l"/>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="square.and.pencil" catalog="system" id="W9p-SZ-x6O">
                             <connections>
                                 <action selector="newNotePressed:" destination="BYZ-38-t0r" id="H2c-Gw-Q85"/>
@@ -86,11 +85,14 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="4Ye-Ob-Jpc">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="TwK-hl-l6T"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="TwK-hl-l6T">
+                            <connections>
+                                <action selector="savePressed:" destination="sVC-qb-WXc" id="z42-s9-pYo"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="noteTextView" destination="1kP-8r-sIu" id="P9U-g3-b68"/>
-                        <outlet property="saveButton" destination="TwK-hl-l6T" id="VUj-7o-FR9"/>
                         <outlet property="titleLabel" destination="Aoa-Xa-F3F" id="EwJ-mf-KUz"/>
                     </connections>
                 </viewController>

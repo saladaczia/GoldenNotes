@@ -9,15 +9,18 @@ import UIKit
 
 class ViewerController: UIViewController {
 
+    // data from ListController
     var titleView: String?
     var descriptionView: String?
     
+    // Outlets
     @IBOutlet weak var titleViewLabel: UILabel!
     @IBOutlet weak var descriptionViewLabel: UITextView!
     
     override func viewDidLoad() {
 
         super.viewDidLoad()
+        // Set title and description
         titleViewLabel.text = titleView
         descriptionViewLabel.text = descriptionView
 
