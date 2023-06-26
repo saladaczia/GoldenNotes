@@ -58,3 +58,10 @@ GoldenNote is a Swift-based iOS application that allows users to save and read n
 
 ## Screenshots
 
+![Simulator Screen Shot](https://github.com/saladaczia/GoldenNotes/assets/75745541/320f465f-73b4-426b-b0ea-43f8eb7a76df)
+
+![Simulator Screen Shot - iPhone 14 Pro - 2023-06-26 at 15](https://github.com/saladaczia/GoldenNotes/assets/75745541/f53a590c-3248-4bc2-a2a5-5bc94f650ef2)
+
+![Simulator Screen Shot - iPhone 14 Pro - 2023-06](https://github.com/saladaczia/GoldenNotes/assets/75745541/d431a3c4-9fd1-4894-9ee6-f81d53329a1c)
+
+
